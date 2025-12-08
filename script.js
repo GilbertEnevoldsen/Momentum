@@ -1,0 +1,15 @@
+const calender = [2, 5, 8, 10, 12, 15, 18, 20, 22, 25, 27];
+
+document.getElementById("calender").innerHTML += generateCalender();
+
+function generateCalender() {
+    let html = "";
+    for (let i = 0; i < 28; i++) {
+        if (calender.includes(i + 1)) {
+            html += `<div class="square filled"></div>`;
+            continue;
+        }
+        html += `<div class="square"></div>`;
+    }
+    return html;
+}
