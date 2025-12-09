@@ -12,6 +12,35 @@ body {
     margin: 0;
 }
 
+.nav-menu {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(#161616, #080808);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #ffffff30;
+    display: flex;
+    gap: 30px;
+    z-index: 1000;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.nav-menu a.active {
+    opacity: 1;
+    text-shadow: #ffffff 0px 0px 8px;
+}
+
 section#home {
     height: 100vh;
     width: 100vw;
@@ -37,14 +66,9 @@ section#home {
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #212121;
-    background-color: black;
-    background-color: #151515;
     background: linear-gradient(#161616, #080808);
     border-radius: 20px;
-    border-style: solid;
-    border-width: 1.5px;
-    border-color: #ffffff30;
+    border: 1.5px solid #ffffff30;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
 }
@@ -102,7 +126,7 @@ section#home {
 
 .calender .square.filled {
     background: linear-gradient(#31e981, #6eeaa4);
-    border: 0px solid #ffffff10;
+    border: 1.5px solid #6eeaa4;
     box-shadow: 0 0 16px 0px #31e98160;
     border-radius: 5px;
 }
@@ -121,10 +145,38 @@ section#home {
     text-align: center;
 }
 
-.schedule .day {
+.schedule .off-day {
     width: 2px;
-    border-radius: 5px;
+    border-radius: 1px;
     height: 100%;
     background-color: #ffffff60;
     justify-self: center;
+}
+
+.schedule .work-day {
+    width: 25px;
+    border-radius: 5px;
+    height: 100%;
+    background: linear-gradient(#31e981, #6eeaa4);
+    box-shadow: 0 0 16px 0px #31e98160;
+    justify-self: center;
+}
+
+.start-workout {
+    grid-column: span 2;
+    grid-row: span 1;
+    margin: auto;
+    width: 60%;
+    padding: 15px 10px;
+    background: linear-gradient(#161616, #080808);
+    border: 1.5px solid #ffffff30;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0px;
+    cursor: pointer;
+    inset: none;
 }
