@@ -1,0 +1,106 @@
+{
+    "username": "GilbertEnevoldsen",
+    "weight": 73.3,
+    "bodyFat": 12.2,
+    "goals": {
+        "weight": {
+            "start": 75,
+            "target": 70
+        },
+        "bodyFat": {
+            "start": 12.5,
+            "target": 10
+        },
+        "records": {
+            "Bench Press": {
+                "start": 80,
+                "target": 110
+            },
+            "Pull-Ups": {
+                "start": 73.3,
+                "target": 85
+            }
+        }
+    },
+    "routines": {
+        "Upper Body": {
+                "Bench Press": {
+                    "sets": 4
+                },
+                "Pull-Ups": {
+                    "sets": 4
+                }
+        },
+        "Lower Body": {
+            "Squats": {
+                "sets": 4
+            },
+            "Deadlifts": {
+                "sets": 4
+            }
+        }
+    },
+    "schedule": {
+        "Monday": "Upper Body",
+        "Tuesday": "Lower Body",
+        "Wednesday": null,
+        "Thursday": "Upper Body",
+        "Friday": "Lower Body",
+        "Saturday": null,
+        "Sunday": null
+    },
+    "workouts": [
+        {
+            "timestamp": 1765315635,
+            "title": "Chest & Back",
+            "exercises": {
+                "Bench Press": {
+                    "sets": 4,
+                    "reps": [10, 8, 6, 6],
+                    "weight": [60, 70, 80, 85]
+                },
+                "Pull-Ups": {
+                    "sets": 4,
+                    "reps": [8, 8, 6, 6],
+                    "weight": [73.3, 73.3, 73.3, 73.3]
+                }
+            }
+        },
+        {
+            "timestamp": 1765122002,
+            "title": "Triceps & Biceps",
+            "exercises": [
+                {
+                    "name": "Tricep Dips",
+                    "sets": 4,
+                    "reps": [12, 10, 8, 8],
+                    "weight": [73.3, 73.3, 73.3, 73.3]
+                },
+                {
+                    "name": "Bicep Curls",
+                    "sets": 4,
+                    "reps": [10, 10, 8, 8],
+                    "weight": [15, 20, 25, 30]
+                }
+            ]
+        }
+    ],
+    "records": {
+        "Bench Press": {
+            "weightMax": 100, // Just the max weight in kilo
+            "balancedMax": {
+                "score": 43350, // weight^2 * reps -- weight squared times reps for balanced strength because weight matters more
+                "weight": 85,
+                "reps": 6
+            }
+        },
+        "Pull-Ups": {
+            "weightMax": 73.3, // Bodyweight if no extra weight, else bodyweight + extra weight
+            "balancedMax": {
+                "score": 42983,
+                "weight": 73.3,
+                "reps": 8
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "strength": {
+        "Bench Press": {
+            "attributes": [
+                "weight",
+                "reps"
+            ],
+            "unit": "kg",
+            "goal": "weight" // Which attribute to track for progress
+        },
+        "Pull-Ups": {
+            "attributes": [
+                "weight",
+                "reps"
+            ],
+            "unit": "kg",
+            "goal": "reps"
+        }
+    },
+    "cardio": {
+        "Running": {
+            "attributes": [
+                "distance",
+                "time"
+            ],
+            "unit": "km",
+            "goal": "distance"
+        },
+        "Cycling": {
+            "attributes": [
+                "distance",
+                "time"
+            ],
+            "unit": "km",
+            "goal": "distance"
+        }
+    }
+}
