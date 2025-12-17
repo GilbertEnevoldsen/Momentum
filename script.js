@@ -1,15 +1,23 @@
-var state = "home";
+let state = "home";
+let nav_state = "home";
 
-const calender = [2, 5, 8, 10, 12, 15, 18, 20, 22, 25, 27]; // temp data
+const calender = [2, 5, 10, 14, 16, 17, 21, 24, 26]; // temp data
 
 document.getElementById("calender").innerHTML += generateCalender();
 
 function navigate(to) {
-    document.getElementById("nav-menu").querySelector("#" + state).classList.remove("active");
-    document.getElementById("nav-menu").querySelector("#" + to).classList.add("active");
     document.querySelector("section#" + state).classList.remove("active");
     document.querySelector("section#" + to).classList.add("active");
     state = to;
+}
+
+function navbar_navigate(to) {
+    document.getElementById("nav-menu").querySelector("#" + state).classList.remove("active");
+    document.getElementById("nav-menu").querySelector("#" + to).classList.add("active");
+    document.querySelector("section#" + nav_state).classList.remove("active");
+    document.querySelector("section#" + to).classList.add("active");
+    state = to;
+    nav_state = to;
 }
 
 function generateCalender() {
@@ -28,4 +36,4 @@ if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("/service-worker.js");
 }
 
-navigate("statistics");
+navbar_navigate("home");

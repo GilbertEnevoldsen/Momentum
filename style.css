@@ -136,7 +136,7 @@ section.active {
     border-radius: 5px;
 }
 
-.schedule {
+.schedule-min {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 10px 70px;
@@ -144,13 +144,13 @@ section.active {
     margin-top: 20px;
 }
 
-.schedule .day-label {
+.schedule-min .day-label {
     font-size: 10px;
     opacity: 0.4;
     text-align: center;
 }
 
-.schedule .off-day {
+.schedule-min .off-day {
     width: 2px;
     border-radius: 1px;
     height: 100%;
@@ -158,7 +158,7 @@ section.active {
     justify-self: center;
 }
 
-.schedule .work-day {
+.schedule-min .work-day {
     width: 25px;
     border-radius: 5px;
     height: 100%;
@@ -184,4 +184,39 @@ section.active {
     letter-spacing: 0px;
     cursor: pointer;
     inset: none;
+}
+
+.schedule {
+    display: grid;
+    grid-template-rows: repeat(7, 25px);
+    grid-template-columns: 10px auto;
+    column-gap: 30px;
+    row-gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.schedule .day-label {
+    font-size: 10px;
+    opacity: 0.4;
+    text-align: center;
+}
+
+.schedule .off-day {
+    width: 2px;
+    border-radius: 1px;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff60;
+    justify-self: center;
+}
+
+.schedule .work-day {
+    width: 25px;
+    border-radius: 2px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#31e981, #6eeaa4);
+    box-shadow: 0 0 16px 0px #31e98160;
+    justify-self: center;
 }
