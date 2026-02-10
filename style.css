@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background-color: black;
+    background-color: #050507;
     color: white;
     font-family: Prompt, sans-serif;
     overscroll-behavior-y: none;
@@ -17,10 +17,10 @@ body {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(#161616, #080808);
+    background: linear-gradient(#050507, #050507);
     padding: 10px 20px;
-    border-radius: 20px;
-    border: 1px solid #ffffff30;
+    border-radius: 0px;
+    border-top: 1px solid #c0c0c5;
     display: flex;
     gap: 30px;
     z-index: 1000;
@@ -71,10 +71,10 @@ section.active {
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
-    background: linear-gradient(#161616, #080808);
-    border-radius: 20px;
-    border: 1px solid #ffffff30;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(#18181a, #161618);
+    border-radius: 15px;
+    border-top: 1px solid #c0c0c530;
+    border-bottom: 1px solid #c0c0c515;
     color: white;
 }
 
@@ -123,16 +123,16 @@ section.active {
 .calender .square {
     width: 100%;
     height: 100%;
-    background: linear-gradient(#161616, #1d1d1d);
+    background: linear-gradient(#303032, #303032);
     border: 1px solid #ffffff10;
     border-radius: 5px;
 }
 
 
 .calender .square.filled {
-    background: linear-gradient(#31e981, #6eeaa4);
-    border: 1px solid #6eeaa4;
-    box-shadow: 0 0 16px 0px #31e98160;
+    background: linear-gradient(#ffffff, #ffffff);
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 16px 0px #ffffff60;
     border-radius: 5px;
 }
 
@@ -162,8 +162,8 @@ section.active {
     width: 25px;
     border-radius: 5px;
     height: 100%;
-    background: linear-gradient(#31e981, #6eeaa4);
-    box-shadow: 0 0 16px 0px #31e98160;
+    background: linear-gradient(#ffffff, #ffffff);
+    box-shadow: 0 0 16px 0px #ffffff60;
     justify-self: center;
 }
 
@@ -173,8 +173,10 @@ section.active {
     margin: auto;
     width: 60%;
     padding: 15px 10px;
-    background: linear-gradient(#161616, #080808);
-    border: 1px solid #ffffff30;
+    background: linear-gradient(#18181a, #161618);
+    border: none;
+    border-top: 1px solid #c0c0c530;
+    border-bottom: 1px solid #c0c0c515;
     outline: none;
     box-sizing: border-box;
     border-radius: 20px;
