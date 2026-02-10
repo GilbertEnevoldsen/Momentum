@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background-color: #050507;
+    background-color: #08080a;
     color: white;
     font-family: Prompt, sans-serif;
     overscroll-behavior-y: none;
@@ -17,13 +17,14 @@ body {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(#050507, #050507);
+    background: linear-gradient(#08080a, #08080a);
     padding: 10px 20px;
     border-radius: 0px;
     border-top: 1px solid #c0c0c5;
     display: flex;
     gap: 30px;
     z-index: 1000;
+    padding-top: 15px;
 }
 
 .nav-menu a {
@@ -72,9 +73,9 @@ section.active {
     padding: 20px;
     box-sizing: border-box;
     background: linear-gradient(#18181a, #161618);
-    border-radius: 15px;
-    border-top: 1px solid #c0c0c530;
-    border-bottom: 1px solid #c0c0c515;
+    border-radius: 25px;
+    border-top: 1px solid #c0c0c520;
+    border-bottom: 1px solid #00000010;
     color: white;
 }
 
@@ -109,8 +110,8 @@ section.active {
 .calender {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 10px repeat(5, 20px);
-    gap: 10px;
+    grid-template-rows: 15px repeat(5, 15px);
+    gap: 15px;
     margin-top: 20px;
 }
 
@@ -121,11 +122,12 @@ section.active {
 }
 
 .calender .square {
+    justify-self: center;
     width: 100%;
-    height: 100%;
+    height: 80%;
     background: linear-gradient(#303032, #303032);
     border: 1px solid #ffffff10;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 
@@ -133,7 +135,6 @@ section.active {
     background: linear-gradient(#ffffff, #ffffff);
     border: 1px solid #ffffff;
     box-shadow: 0 0 16px 0px #ffffff60;
-    border-radius: 5px;
 }
 
 .schedule-min {
@@ -175,8 +176,8 @@ section.active {
     padding: 15px 10px;
     background: linear-gradient(#18181a, #161618);
     border: none;
-    border-top: 1px solid #c0c0c530;
-    border-bottom: 1px solid #c0c0c515;
+    border-top: 1px solid #c0c0c520;
+    border-bottom: 1px solid #00000010;
     outline: none;
     box-sizing: border-box;
     border-radius: 20px;
