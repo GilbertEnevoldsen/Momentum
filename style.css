@@ -89,6 +89,7 @@ h3 {
     float: right;
     font-weight: 300;
     opacity: 0.6;
+    letter-spacing: 1px;
 }
 
 .info-box {
