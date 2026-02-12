@@ -197,12 +197,11 @@ h3 {
     grid-column: span 2;
     grid-row: span 1;
     margin: auto;
-    width: 60%;
+    width: 100%;
     padding: 15px 10px;
     background: linear-gradient(#1c1c1f, #1c1c1f);
     border: none;
-    border-top: 1px solid #c0c0c520;
-    border-bottom: 1px solid #00000010;
+    border: 2px solid #c0c0c540;
     outline: none;
     box-sizing: border-box;
     border-radius: 20px;
