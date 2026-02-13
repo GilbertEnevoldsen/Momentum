@@ -13,13 +13,14 @@
 </head>
 <body>
     <section id="home" class="active">
-        <h3 class="title">Momentum</h3><h3 class="profile-label">Gilbert ⬤</h3>
+        <h3 class="title">Momentum</h3><h3 class="profile-label">Gilbert <img class="user-icon" src="./assets/user_icon.svg"></img></h3>
         <div class="content">
             <div class="info-box">
                 <p class="label">weight</p>
                 <h1 class="value">73.3</h1><p class="unit">kg</p>
                 <p class="label">body fat</p>
                 <h1 class="value">12.3</h1><p class="unit">%</p>
+                <button class="edit-btn corner"><img class="edit-icon" src="./assets/edit_icon.svg"></img></button>
             </div>
             <div class="info-box">
                 <p class="label">last workout</p>
@@ -30,7 +31,7 @@
             <div class="info-box wide">
                 <p class="label">last 28 days</p>
                 <div class="calender" id="calender">
-                    <label class="day-label">mon</label>
+                    <label class="day-label current-day">mon</label>
                     <label class="day-label">tue</label>
                     <label class="day-label">wed</label>
                     <label class="day-label">thu</label>
@@ -42,7 +43,7 @@
             <div class="info-box wide">
                 <p class="label">schedule</p>
                 <div class="schedule-min" id="schedule-min">
-                    <label class="day-label">mon</label>
+                    <label class="day-label current-day">mon</label>
                     <label class="day-label">tue</label>
                     <label class="day-label">wed</label>
                     <label class="day-label">thu</label>
@@ -63,33 +64,29 @@
     </section>
     <section id="statistics"></section>
     <section id="schedule">
-        <h3 class="title">Momentum</h3><h3 class="profile-label">Gilbert ⬤</h3>
+        <h3 class="title">Momentum</h3><h3 class="profile-label">Gilbert <img class="user-icon" src="./assets/user_icon.svg"></img></h3>
         <div class="content">
             <div class="info-box-clear wide">
                 <p class="label">weekly schedule</p>
                 <div class="schedule" id="schedule">
-                    <label class="day-label">mon</label><div class="off-day"></div><button class="edit-btn">⬤</button>
-                    <label class="day-label">tue</label><div class="work-day"><div class="highlight"></div>Ryg og biceps<br><label>16:00 - 17:30</label></div><button class="edit-btn">⬤</button>
-                    <label class="day-label">wed</label><div class="work-day"><div class="highlight"></div>Ryg og biceps<br><label>16:00 - 17:30</label></div><button class="edit-btn">⬤</button>
-                    <label class="day-label">thu</label><div class="off-day"></div><button class="edit-btn">⬤</button>
-                    <label class="day-label">fri</label><div class="work-day"><div class="highlight"></div>Ryg og biceps<br><label>16:00 - 17:30</label></div><button class="edit-btn">⬤</button>
-                    <label class="day-label">sat</label><div class="off-day"></div><button class="edit-btn">⬤</button>
-                    <label class="day-label">sun</label><div class="off-day"></div><button class="edit-btn">⬤</button>
+                    <label class="day-label">mon</label><div class="off-day"></div><button class="edit-btn"><img class="edit-icon" src="./assets/edit_icon.svg"></img></button>
+                    <label class="day-label">tue</label><div class="work-day"><div class="highlight"></div>Ryg og biceps<br><label>16:00 - 17:30</label></div><button class="edit-btn"><img class="edit-icon" src="./assets/edit_icon.svg"></img></button>
+                    <label class="day-label">wed</label><div class="work-day"><div class="highlight"></div>Ben<br><label>16:00 - 17:30</label></div><button class="edit-btn"><img class="edit-icon" src="./assets/edit_icon.svg"></img></button>
+                    <label class="day-label">thu</label><div class="off-day"></div><button class="edit-btn"><img class="edit-icon" src="./assets/edit_icon.svg"></img></button>
+                    <label class="day-label">fri</label><div class="work-day"><div class="highlight"></div>Bryst og triceps<br><label>17:00 - 18:00</label></div><button class="edit-btn"><img class="edit-icon" src="./assets/edit_icon.svg"></img></button>
+                    <label class="day-label">sat</label><div class="off-day"></div><button class="edit-btn"><img class="edit-icon" src="./assets/edit_icon.svg"></img></button>
+                    <label class="day-label">sun</label><div class="off-day"></div><button class="edit-btn"><img class="edit-icon" src="./assets/edit_icon.svg"></img></button>
                 </div>
             </div>
             <div class="info-box wide">
                 <p class="label">routines</p>
                 <div class="routines" id="routines">
-                    <div class="routine"><label>Ryg og biceps</label><label class="detail">8 excercises</label></div>
-                    <div class="routine"><label>Bryst og triceps</label><label class="detail">6 excercises</label></div>
-                    <div class="routine"><label>Ben</label><label class="detail">7 excercises</label></div>
-                    <div class="routine"><label>Ryg og biceps</label><label class="detail">8 excercises</label></div>
-                    <div class="routine"><label>Bryst og triceps</label><label class="detail">6 excercises</label></div>
-                    <div class="routine"><label>Ben</label><label class="detail">7 excercises</label></div>
-                    <div class="routine"><label>Ryg og biceps</label><label class="detail">8 excercises</label></div>
-                    <div class="routine"><label>Bryst og triceps</label><label class="detail">6 excercises</label></div>
-                    <div class="routine"><label>Ben</label><label class="detail">7 excercises</label></div>
-                    <div class="routine"><label class="muted">new routine</label><label class="add-btn">+</label></div>
+                    <div class="routine"><label>Ryg og biceps</label><label class="detail">8 excercises</label><button class="edit-btn"><img class="edit-icon" src="./assets/edit_icon.svg"></img></button></div>
+                    <div class="routine"><label>Bryst og triceps</label><label class="detail">6 excercises</label><button class="edit-btn"><img class="edit-icon" src="./assets/edit_icon.svg"></img></button></div>
+                    <div class="routine"><label>Ben</label><label class="detail">7 excercises</label><button class="edit-btn"><img class="edit-icon" src="./assets/edit_icon.svg"></img></button></div>
+                    <div class="routine"><label>Cardio</label><label class="detail">5 excercises</label><button class="edit-btn"><img class="edit-icon" src="./assets/edit_icon.svg"></img></button></div>
+                    <div class="routine"><label>Hele kroppen</label><label class="detail">12 excercises</label><button class="edit-btn"><img class="edit-icon" src="./assets/edit_icon.svg"></img></button></div>
+                    <div class="routine"><label class="muted">new routine</label><p></p><button class="add-btn"><img class="add-icon" src="./assets/add_icon.svg"></img></button></div>
                 </div>
             </div>
         </div>
