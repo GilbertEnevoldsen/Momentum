@@ -50,6 +50,7 @@ body {
 }
 
 #home .radial-progress {
+    display: block;
     text-align: center;
     align-self: center;
     border-radius: 50%;
@@ -75,10 +76,11 @@ body {
 }
 
 #home .progress-value {
-    text-align: center;
     position: relative;
-    bottom: 52%;
-    transform: translate(-50%, 50%);
+    top: -55%;
+    /*align-self: center;
+    justify-self: center;
+    text-align: center;*/
     font-size: 34px;
     font-weight: 700;
     letter-spacing: 0.5px;
