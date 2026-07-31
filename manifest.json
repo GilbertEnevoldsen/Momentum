@@ -3,7 +3,7 @@
   "short_name": "Momentum",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#000000",
+  "background_color": "#050504",
   "theme_color": "#ffffff",
   "icons": [
     {
