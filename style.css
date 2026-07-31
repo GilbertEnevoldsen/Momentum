@@ -4,7 +4,7 @@
     --bg-color: #050504;
     --box-color: #181816;
     --highlight-box-color: #fffff640;
-    --border-color: #fffff615;
+    --border-color: #fffff610;
     --highlight-border-color: #fffff640;
     --white-text-color: #fffff6;
     --gray-text-color: #fffff640;
@@ -16,9 +16,9 @@ body {
     color: var(--white-text-color);
     background-color: var(--bg-color);
     margin: 0;
-    width: 100vw;
+    /*width: 100vw;
     height: 100vh;
-    transform: translate(10px, 0);
+    transform: translate(10px, 0);*/
 }
 
 #home {
