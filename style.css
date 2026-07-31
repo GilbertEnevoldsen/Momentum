@@ -26,11 +26,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    margin: 0px 20px;
+    margin: 0px 30px;
     color: var(--white-text-color);
 }
 
 #home .date {
+    margin-top: 0px;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -76,8 +77,9 @@ body {
 }
 
 #home .progress-value {
-    position: relative;
-    top: -105%;
+    display: block;
+    /*position: relative;*/
+    transform: translate(0, -90px);
     /*align-self: center;
     justify-self: center;
     text-align: center;*/
