@@ -56,6 +56,12 @@ body {
     margin-bottom: 20px;
 }
 
+.categoryLabel {
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+}
+
 /* 
 ==================================================
 Home screen
@@ -127,7 +133,7 @@ Home screen
     color: var(--text-color);
 }
 
-/* Homescreen goals infobox styles */
+/* Homescreen schedule styles */
 #scheduleBox {
     display: flex;
     align-items: center;
@@ -193,4 +199,61 @@ Home screen
 .scheduleName {
     font-size: 0.7rem;
     margin-bottom: 2px;
+    overflow: hidden;
+}
+
+/* Homescreen calendar styles */
+#calenderLabel {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+#calenderWorkoutCounter {
+    margin-top: 4px;
+    float: right;
+}
+
+#calenderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calenderDay {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.calenderWeekday {
+    font-size: 0.7rem;
+}
+
+.calenderDate {
+    font-size: 0.8rem;
+    width: 100%;
+    aspect-ratio: 1/1;
+    color: var(--text-color);
+    background-color: var(--light-bg-color);
+    border-radius: 50%;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calenderDateFilled {
+    background-color: var(--white-color);
+    color: var(--bg-color);
+    font-weight: bold;
+}
+
+.calenderDateToday {
+    border: 1px solid var(--white-color);
+    font-weight: bold;
 }
