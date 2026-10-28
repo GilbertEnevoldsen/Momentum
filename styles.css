@@ -8,7 +8,7 @@
     --text-color: #8c8c8c;
     --light-bg-color: #1f1f1f;
 
-    --accent-color: #2bbd7a;
+    --accent-color: #2ec499;
 
     --font-family: "Inter", sans-serif;
 }
@@ -20,7 +20,7 @@
 
     font-family: var(--font-family);
     color: var(--text-color);
-    font-optical-sizing: auto;
+    /*font-optical-sizing: auto;*/
 }
 
 body {
@@ -41,7 +41,7 @@ body {
     background-color: var(--box-bg-color);
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 8px;
+    padding: 16px;
     margin-bottom: 20px;
 }
 
@@ -56,15 +56,21 @@ body {
     margin-bottom: 20px;
 }
 
+/* 
+==================================================
+Home screen
+==================================================
+*/
+
 /* Homescreen goals infobox styles */
-#goalsBoxContentWrapper {
+#goalsBox {
     display: flex;
     align-items: center;
     justify-content: left;
 }
 
 #goalsBoxTextWrapper {
-    margin-left: 8px;
+    margin-left: 20px;
 }
 
 #goalsBoxTitle {
@@ -86,7 +92,7 @@ body {
 
 #outerProgressRing {
     display: inline-block;
-    margin: 16px;
+    margin: 8px;
     width: 110px;
     height: 110px;
     border-radius: 50%;
@@ -119,4 +125,72 @@ body {
     font-weight: bold;
     font-size: 1.3rem;
     color: var(--text-color);
+}
+
+/* Homescreen goals infobox styles */
+#scheduleBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.scheduleDay {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.activeDay {
+    background-color: var(--light-bg-color);
+}
+
+.scheduleWeekday {
+    font-size: 0.7rem;
+    margin-bottom: 4px;
+}
+
+.scheduleDate {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white-color);
+    margin-bottom: 6px;
+}
+
+.scheduleIcon {
+    border: 1px dashed var(--border-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 100%;
+    aspect-ratio: 1/1;
+    color: var(--text-color);
+    border-radius: 50%;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scheduleIconFilled {
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 100%;
+    aspect-ratio: 1/1;
+    color: var(--bg-color);
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scheduleName {
+    font-size: 0.7rem;
+    margin-bottom: 2px;
 }
