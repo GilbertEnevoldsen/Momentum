@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Momentum</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#000000">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link rel="apple-touch-icon" href="/icons/icon-512.png">
-</head>
-<body>
-    <section id="home">
-        <p class="date">Jul 31, 2026 | v1.0.3</p>
-        <h1 class="label center">Total Progress</h1>
-        <div class="radial-progress">
-            <span class="progress-value">38.5%</span>
-        </div>
-        <p class="info-text">In 76 days, with an average of 0.5% per day.</p>
-        <!--<div class="block"></div>-->
-        <span class="line"></span>
-        <div class="weekly-schedule">
-            <div class="day"><p>MON</p><div class="orange marker"></div></div>
-            <div class="day"><p>TUE</p></div>
-            <div class="day"><p>WED</p><div class="blue marker"></div></div>
-            <div class="day"><p>THU</p><div class="green marker"></div></div>
-            <div class="day"><p>FRI</p></div>
-            <div class="day current"><p>SAT</p></div>
-            <div class="day"><p>SUN</p></div>
-        </div>
-        <h1 class="label">Next workout in 2 days</h1>
-        <div class="block">
-            <div class="orange marker-bar"></div>
-            <h2 class="workout-title">Ryg og Biceps</h2>
-            <p class="workout-info-text">6 exercises</p>
-        </div>
-    </section>
-    <nav></nav>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <title>Momentum</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main>
+            <section id="homePage" class="page">
+                <div id="homePageContent" class="pageContentWrapper">
+                    <label class="preheading">Monday, 26 October</label>
+                    <h1 class="heading">Momentum</h1>
+                    <div class="contentBox">
+                        <div id="goalsBoxContentWrapper">
+                            <div id="outerProgressRing">
+                                <div id="innerProgressRing">
+                                    <h1 id="progressValue">68</h1>
+                                    <p id="percentageIcon">%</p>
+                                </div>
+                            </div>
+                            <div id="goalsBoxTextWrapper">
+                                <p id="goalsBoxTitle">STRENGTH GOALS</p>
+                                <p id="goalsBoxLine">Next goal</p>
+                                <p id="goalsBoxNextGoal">Bench press 100 kg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
