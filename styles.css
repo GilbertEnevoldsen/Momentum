@@ -32,7 +32,7 @@ body {
 }
 
 .page {
-    padding: 20px;
+    padding: 0px 20px;
 }
 
 .contentBox {
@@ -163,7 +163,7 @@ Home screen
 }
 
 .scheduleIcon {
-    border: 1px dashed var(--border-color);
+    border: 1px solid var(--border-color);
     font-size: 0.9rem;
     font-weight: bold;
     width: 100%;
