@@ -30,53 +30,59 @@
                     </div>
                     <div id="scheduleBox" class="contentBox">
 
-                        <div class="scheduleDay activeDay">
-                            <p class="scheduleWeekday">Mon</p>
-                            <p class="scheduleDate">26</p>
-                            <p class="scheduleIconFilled">P</p>
-                            <p class="scheduleName">Push</p>
-                        </div>
+                        <p id="scheduleLabel" class="categoryLabel">THIS WEEK</p>
 
-                        <div class="scheduleDay">
-                            <p class="scheduleWeekday">Tue</p>
-                            <p class="scheduleDate">27</p>
-                            <p class="scheduleIcon"></p>
-                            <p class="scheduleName">Rest</p>
-                        </div>
+                        <div id="scheduleContainer">
 
-                        <div class="scheduleDay">
-                            <p class="scheduleWeekday">Wed</p>
-                            <p class="scheduleDate">28</p>
-                            <p class="scheduleIcon"></p>
-                            <p class="scheduleName">Rest</p>
-                        </div>
+                            <div class="scheduleDay activeDay">
+                                <p class="scheduleWeekday">Mon</p>
+                                <p class="scheduleDate">26</p>
+                                <p class="scheduleIconFilled">P</p>
+                                <p class="scheduleName">Push</p>
+                            </div>
 
-                        <div class="scheduleDay">
-                            <p class="scheduleWeekday">Thu</p>
-                            <p class="scheduleDate">29</p>
-                            <p class="scheduleIconFilled">P</p>
-                            <p class="scheduleName">Pull</p>
-                        </div>
+                            <div class="scheduleDay">
+                                <p class="scheduleWeekday">Tue</p>
+                                <p class="scheduleDate">27</p>
+                                <p class="scheduleIcon"></p>
+                                <p class="scheduleName">Rest</p>
+                            </div>
 
-                        <div class="scheduleDay">
-                            <p class="scheduleWeekday">Fri</p>
-                            <p class="scheduleDate">30</p>
-                            <p class="scheduleIconFilled">L</p>
-                            <p class="scheduleName">Legs</p>
-                        </div>
+                            <div class="scheduleDay">
+                                <p class="scheduleWeekday">Wed</p>
+                                <p class="scheduleDate">28</p>
+                                <p class="scheduleIcon"></p>
+                                <p class="scheduleName">Rest</p>
+                            </div>
 
-                        <div class="scheduleDay">
-                            <p class="scheduleWeekday">Sat</p>
-                            <p class="scheduleDate">31</p>
-                            <p class="scheduleIcon"></p>
-                            <p class="scheduleName">Rest</p>
-                        </div>
+                            <div class="scheduleDay">
+                                <p class="scheduleWeekday">Thu</p>
+                                <p class="scheduleDate">29</p>
+                                <p class="scheduleIconFilled">P</p>
+                                <p class="scheduleName">Pull</p>
+                            </div>
 
-                        <div class="scheduleDay">
-                            <p class="scheduleWeekday">Sun</p>
-                            <p class="scheduleDate">1</p>
-                            <p class="scheduleIcon"></p>
-                            <p class="scheduleName">Rest</p>
+                            <div class="scheduleDay">
+                                <p class="scheduleWeekday">Fri</p>
+                                <p class="scheduleDate">30</p>
+                                <p class="scheduleIconFilled">L</p>
+                                <p class="scheduleName">Legs</p>
+                            </div>
+
+                            <div class="scheduleDay">
+                                <p class="scheduleWeekday">Sat</p>
+                                <p class="scheduleDate">31</p>
+                                <p class="scheduleIcon"></p>
+                                <p class="scheduleName">Rest</p>
+                            </div>
+
+                            <div class="scheduleDay">
+                                <p class="scheduleWeekday">Sun</p>
+                                <p class="scheduleDate">1</p>
+                                <p class="scheduleIcon"></p>
+                                <p class="scheduleName">Rest</p>
+                            </div>
+
                         </div>
 
                     </div>
@@ -129,7 +135,37 @@
 
                     </div>
                 </div>
+                <div id="startWorkoutBtn"><p>Start workout</p></div>
             </section>
+            <nav id="navBar">
+                <div class="navBtn activeBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>
+                    </svg>
+                    <p>Home</p>
+                </div>
+                <div class="navBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 6h16M4 12h16M4 18h10"/>
+                    </svg>
+                    <p>Routines</p>
+                </div>
+                <div class="navBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M5 20V10M12 20V4M19 20v-7"/>
+                    </svg>
+                    <p>Stats</p>
+                </div>
+                <div class="navBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9"/>
+                        <circle cx="12" cy="12" r="4.5"/>
+                        <circle cx="12" cy="12" r="1" fill="currentColor"/>
+                    </svg>
+                    <p>Goals</p>
+                </div>
+                
+            </nav>
         </main>
     </body>
 </html>
