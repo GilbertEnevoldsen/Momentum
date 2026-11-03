@@ -12,7 +12,7 @@
     <body>
         <div id="splashScreen"><img id="splashScreenLogo" src="assets/logo.png" alt="Momentum Logo"></div>
         <main>
-            <section id="homePage" class="page">
+            <section id="homePage" class="page show">
                 <div id="homePageContent" class="pageContentWrapper">
                     <p class="preheading">Monday, 26 October</p>
                     <h1 class="heading">Momentum</h1>
@@ -138,26 +138,36 @@
                     <div id="startWorkoutBtn"><p>Start workout</p></div>
                 </div>
             </section>
+            <section id="routinesPage" class="page">
+                <div id="routinesPageContent" class="pageContentWrapper">
+                    <p class="preheading">0 routines · 0 training days</p>
+                    <h1 class="heading">Routines</h1>
+                </div>
+            </section>
+            <section id="statsPage" class="page">
+            </section>
+            <section id="goalsPage" class="page">
+            </section>
             <nav id="navBar">
-                <div class="navBtn activeBtn">
+                <div id="homeNavBtn" class="navBtn activeBtn" onclick="navigateToPage('homePage')">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>
                     </svg>
                     <p>Home</p>
                 </div>
-                <div class="navBtn">
+                <div id="routinesNavBtn" class="navBtn" onclick="navigateToPage('routinesPage')">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M4 6h16M4 12h16M4 18h10"/>
                     </svg>
                     <p>Routines</p>
                 </div>
-                <div class="navBtn">
+                <div id="statsNavBtn" class="navBtn" onclick="navigateToPage('statsPage')">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M5 20V10M12 20V4M19 20v-7"/>
                     </svg>
                     <p>Stats</p>
                 </div>
-                <div class="navBtn">
+                <div id="goalsNavBtn" class="navBtn" onclick="navigateToPage('goalsPage')">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <circle cx="12" cy="12" r="9"/>
                         <circle cx="12" cy="12" r="4.5"/>

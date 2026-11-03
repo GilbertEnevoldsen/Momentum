@@ -64,9 +64,14 @@ body {
 }
 
 .page {
+    display: none;
     background-color: var(--bg-color);
     padding: 0px 20px;
     height: 100%;
+}
+
+.page.show {
+    display: block;
 }
 
 .contentBox {
@@ -120,6 +125,7 @@ body {
     font-size: 0.75rem;
     color: var(--text-color);
     gap: 4px;
+    width: 70px;
 }
 
 .activeBtn {
