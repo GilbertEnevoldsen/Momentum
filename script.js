@@ -1,17 +1,22 @@
-setTimeout(() => {
-    const splashscreenLogo = document.getElementById('splashScreenLogo');
-    splashscreenLogo.classList.add('hidden');
-}, 1000);
+var currentTab = 'homePage';
+var currentPage = 'homePage';
 
-setTimeout(() => {
-    const splashscreen = document.getElementById('splashScreen');
-    splashscreen.classList.add('hidden');
-}, 1500);
+function splashScreen() {
+    setTimeout(() => {
+        const splashscreenLogo = document.getElementById('splashScreenLogo');
+        splashscreenLogo.classList.add('hidden');
+    }, 1000);
 
-setTimeout(() => {
-    const splashscreen = document.getElementById('splashScreen');
-    splashscreen.classList.add('disabled');
-}, 2000);
+    setTimeout(() => {
+        const splashscreen = document.getElementById('splashScreen');
+        splashscreen.classList.add('hidden');
+    }, 1500);
+
+    setTimeout(() => {
+        const splashscreen = document.getElementById('splashScreen');
+        splashscreen.classList.add('disabled');
+    }, 2000);
+}
 
 function navigateToPage(pageId) {
 
@@ -26,8 +31,18 @@ function navigateToPage(pageId) {
     });
 
     const navBtn = document.querySelector(`.navBtn[onclick="navigateToPage('${pageId}')"]`);
-    navBtn.classList.add('activeBtn');
+    if (navBtn) {
+        navBtn.classList.add('activeBtn');
+    }
 
     const page = document.getElementById(pageId);
     page.classList.add('show');
+
+    if (!document.getElementById(pageId).classList.contains('overPage')) {
+        currentTab = pageId;
+    }
+
+    currentPage = pageId;
 }
+
+splashScreen();
