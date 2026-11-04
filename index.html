@@ -179,78 +179,6 @@
                                 <p class="weekdayBtn">S</p>
                             </div>
                         </div>
-                        <div class="routine contentBox">
-                            <div class="routineUpperWrapper">
-                                <div class="routineIcon">P</div>
-                                <div class="routineInfoWrapper">
-                                    <h2 class="routineName">Push</h2>
-                                    <p class="routineDescription">6 exercises · 18 sets</p>
-                                </div>
-                            </div>
-                            <div class="scheduleSelector">
-                                <p class="weekdayBtn active">M</p>
-                                <p class="weekdayBtn">T</p>
-                                <p class="weekdayBtn disabled">W</p>
-                                <p class="weekdayBtn">T</p>
-                                <p class="weekdayBtn">F</p>
-                                <p class="weekdayBtn">S</p>
-                                <p class="weekdayBtn">S</p>
-                            </div>
-                        </div>
-                        <div class="routine contentBox">
-                            <div class="routineUpperWrapper">
-                                <div class="routineIcon">P</div>
-                                <div class="routineInfoWrapper">
-                                    <h2 class="routineName">Pull</h2>
-                                    <p class="routineDescription">5 exercises · 15 sets</p>
-                                </div>
-                            </div>
-                            <div class="scheduleSelector">
-                                <p class="weekdayBtn disabled">M</p>
-                                <p class="weekdayBtn">T</p>
-                                <p class="weekdayBtn active">W</p>
-                                <p class="weekdayBtn">T</p>
-                                <p class="weekdayBtn">F</p>
-                                <p class="weekdayBtn">S</p>
-                                <p class="weekdayBtn">S</p>
-                            </div>
-                        </div>
-                        <div class="routine contentBox">
-                            <div class="routineUpperWrapper">
-                                <div class="routineIcon">P</div>
-                                <div class="routineInfoWrapper">
-                                    <h2 class="routineName">Push</h2>
-                                    <p class="routineDescription">6 exercises · 18 sets</p>
-                                </div>
-                            </div>
-                            <div class="scheduleSelector">
-                                <p class="weekdayBtn active">M</p>
-                                <p class="weekdayBtn">T</p>
-                                <p class="weekdayBtn disabled">W</p>
-                                <p class="weekdayBtn">T</p>
-                                <p class="weekdayBtn">F</p>
-                                <p class="weekdayBtn">S</p>
-                                <p class="weekdayBtn">S</p>
-                            </div>
-                        </div>
-                        <div class="routine contentBox">
-                            <div class="routineUpperWrapper">
-                                <div class="routineIcon">P</div>
-                                <div class="routineInfoWrapper">
-                                    <h2 class="routineName">Pull</h2>
-                                    <p class="routineDescription">5 exercises · 15 sets</p>
-                                </div>
-                            </div>
-                            <div class="scheduleSelector">
-                                <p class="weekdayBtn disabled">M</p>
-                                <p class="weekdayBtn">T</p>
-                                <p class="weekdayBtn active">W</p>
-                                <p class="weekdayBtn">T</p>
-                                <p class="weekdayBtn">F</p>
-                                <p class="weekdayBtn">S</p>
-                                <p class="weekdayBtn">S</p>
-                            </div>
-                        </div>
                         <div class="newRoutineBtn" onclick="navigateToPage('newRoutinePage')">+ New Routine</div>
                     </div>
                 </div>
@@ -261,6 +189,22 @@
             </section>
             <section id="newRoutinePage" class="page overPage">
                 <h1 class="overPageHeading">New Routine</h1>
+                <p class="overPageCancelButton" onclick="pageBack()">Cancel</p>
+                <div id="newRoutinePageContent">
+                    <p class="overPageLabel">NAME</p>
+                    <input id="newRoutineNameInput" class="inputBox" type="text" placeholder="Enter routine name">
+                    <p class="overPageLabel">COLOR</p>
+                    <div id="colorPicker">
+                        <div class="colorOption colorActive" style="background-color: #2ec499;"></div>
+                        <div class="colorOption" style="background-color: #F28B82;"></div>
+                        <div class="colorOption" style="background-color: #60A5FA;"></div>
+                        <div class="colorOption" style="background-color: #A78BFA;"></div>
+                        <div class="colorOption" style="background-color: #F5B546;"></div>
+                        <div class="colorOption" style="background-color: #f5f5f5;"></div>
+                    </div>
+                    <p class="overPageLabel">EXERCISES</p>
+                    <div class="newExerciseBtn" onclick="addExercise()">+ Add Exercise</div>
+                </div>
             </section>
             <nav id="navBar">
                 <div id="homeNavBtn" class="navBtn activeBtn" onclick="navigateToPage('homePage')">
@@ -289,7 +233,6 @@
                     </svg>
                     <p>Goals</p>
                 </div>
-                
             </nav>
         </main>
         <script src="script.js"></script>

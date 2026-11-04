@@ -45,4 +45,10 @@ function navigateToPage(pageId) {
     currentPage = pageId;
 }
 
+function pageBack() {
+    if (currentPage !== currentTab) {
+        navigateToPage(currentTab);
+    }
+}
+
 splashScreen();
