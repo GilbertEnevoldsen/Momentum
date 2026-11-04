@@ -38,8 +38,19 @@ function navigateToPage(pageId) {
     const page = document.getElementById(pageId);
     page.classList.add('show');
 
+    const navBar = document.getElementById('navBar')
+
     if (!document.getElementById(pageId).classList.contains('overPage')) {
         currentTab = pageId;
+
+        if (navBar.classList.contains('hidden')) {
+            navBar.classList.remove('hidden');
+        }
+
+    } else {
+        if (!navBar.classList.contains('hidden')) {
+            navBar.classList.add('hidden');
+        }
     }
 
     currentPage = pageId;

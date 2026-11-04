@@ -40,7 +40,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--box-bg-color);
+    background-color: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +78,7 @@ body {
 }
 
 .overPage {
-    position: fixed;
+    position: block;
     z-index: 99999999;
     width: 100%;
     min-height: 100vh;
@@ -86,6 +86,10 @@ body {
 
 .page.show {
     display: block;
+}
+
+#navBar.hidden {
+    display: none;
 }
 
 .contentBox {
@@ -138,7 +142,7 @@ body {
 
 .overPageCancelButton {
     position: absolute;
-    top: 4px;
+    top: 3px;
     left: 20px;
     color: var(--text-color);
     text-align: left;
